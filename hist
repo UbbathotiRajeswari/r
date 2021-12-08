@@ -1,0 +1,9 @@
+x<-c(19,21,19,22,36,16)
+x
+x<-c(19,21,19,22,36,17)
+x
+summary(x)
+hist(x)
+boxplot(x)
+x<-rnorm(100)
+hist(x,xlab="z",ylab="freq",main="100 random values from the standard normal",col="blue")
