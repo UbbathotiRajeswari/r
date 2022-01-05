@@ -1,0 +1,8 @@
+n <- 5; p<- 0.5; x <- 0:n
+dbinom(x,n,p)
+sum(dbinom(x,n,p))
+x <- 0:12
+prob <- dbinom(x,12,.5)
+barplot(prob,col = "red",ylim = c(0,.2),names.arg=x,
+          main="Binomial Distribution\n(n=12,p=0.5)")
+
