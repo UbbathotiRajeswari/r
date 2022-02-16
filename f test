@@ -1,0 +1,20 @@
+x<-c(9,11,13,11,15,9,12,14)
+y<-c(10,12,10,14,9,8,10)
+print("enter the level of significance")
+alpha<scan()
+n1<-length(x)
+n2<-length(y)
+f<-var.test(x,y)
+print(f)
+if(f[1]>1)
+{
+  tablevalue<-qt(1-alpha,n1-1,n2-1)
+  print(round(tablevalue,digits=3))
+}else
+{
+  tablevalue<-qt(1-alpha,n2-1,n1-1)
+  print(round(tablevalue,digits=3))
+}
+print("tablevalue:")
+tablevalue<-qt(1-alpha,n1-1,n2-1)
+print(round(tablevalue,digits=3))
