@@ -1,0 +1,21 @@
+//barplot
+x<-c(30,40,20,50,45,84)
+m<-c("jan","feb","mar","apr","may","jun")
+barplot(x,names.arg=m,main="DAYS IN A MONTH",xlab="month name",ylab="days",col="red",border="green")
+
+//frequency polygon
+x<-c(30,80,84,55,70)
+plot(x,type="o",main="DAYS IN A MONTH",xlab="month name",ylab="days",col="red",xlim=c(1,10),ylim=c(0,90))
+
+//histogram
+x<-c(30,40,80,84,55,70)
+hist(x,col=c("pink","green","red"),border=c("blue","purple","violet"),xlab="days",ylab="frequency",main="histogram")
+
+//piechart
+x<-c(30,40,80,84,55,70)
+pie(x,labels=c("jan","feb","mar","apr","may","jun"),radius=1,col=c("green","pink","red","violet","orange","purple"),border=rainbow(length(x)),main="piechart")
+
+
+//scatter plot
+x<-scan()
+plot(x,main="frequencies")
